@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.0.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Apr 06, 2020 at 04:03 PM
+- Server version: 10.4.11-MariaDB
+- PHP Version: 7.4.3
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="dl_game" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="customgame">
+                CREATE TABLE `customgame` (
+                  `Name` varchar(20) NOT NULL,
+                  `Correct` int(11) NOT NULL,
+                  `total_questions` int(11) NOT NULL,
+                  `Percentage` int(3) NOT NULL,
+                  `Mode` varchar(20) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="quickgame">
+                CREATE TABLE `quickgame` (
+                  `Name` varchar(20) NOT NULL,
+                  `Correct` int(11) NOT NULL,
+                  `total_questions` int(11) NOT NULL,
+                  `Percentage` int(3) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'dl_game'
+    -->
+    <database name="dl_game">
+        <!-- Table customgame -->
+        <table name="customgame">
+            <column name="Name">Sri</column>
+            <column name="Correct">5</column>
+            <column name="total_questions">6</column>
+            <column name="Percentage">83</column>
+            <column name="Mode">Easy</column>
+        </table>
+        <table name="customgame">
+            <column name="Name">Queen</column>
+            <column name="Correct">9</column>
+            <column name="total_questions">12</column>
+            <column name="Percentage">75</column>
+            <column name="Mode">Medium</column>
+        </table>
+        <table name="customgame">
+            <column name="Name">King</column>
+            <column name="Correct">4</column>
+            <column name="total_questions">7</column>
+            <column name="Percentage">57</column>
+            <column name="Mode">Hard</column>
+        </table>
+        <table name="customgame">
+            <column name="Name">Lorie</column>
+            <column name="Correct">6</column>
+            <column name="total_questions">7</column>
+            <column name="Percentage">85</column>
+            <column name="Mode">Easy</column>
+        </table>
+        <table name="customgame">
+            <column name="Name">Khan</column>
+            <column name="Correct">6</column>
+            <column name="total_questions">11</column>
+            <column name="Percentage">54</column>
+            <column name="Mode">Medium</column>
+        </table>
+        <!-- Table quickgame -->
+        <table name="quickgame">
+            <column name="Name">Sri</column>
+            <column name="Correct">4</column>
+            <column name="total_questions">5</column>
+            <column name="Percentage">80</column>
+        </table>
+        <table name="quickgame">
+            <column name="Name">Daniel</column>
+            <column name="Correct">5</column>
+            <column name="total_questions">5</column>
+            <column name="Percentage">100</column>
+        </table>
+        <table name="quickgame">
+            <column name="Name">Gadhi</column>
+            <column name="Correct">4</column>
+            <column name="total_questions">5</column>
+            <column name="Percentage">80</column>
+        </table>
+    </database>
+</pma_xml_export>
